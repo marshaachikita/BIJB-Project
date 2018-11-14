@@ -17,109 +17,124 @@
         android:layout_height="match_parent"
         android:background="#80FFFFFF"/>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/bijb"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="25dp"
-            android:text="BIJB"
-            android:textSize="80sp"
-            android:textStyle="bold"
-            android:textColor="#c87575"/>
-
-        <TextView
-            android:id="@+id/signin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="SIGN IN"
-            android:textSize="48sp"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:id="@+id/t_user"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Username"
-            android:textSize="16sp"
-            android:textColor="#c87575"/>
-
-        <EditText
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:backgroundTint="#c87575"/>
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/t_email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Email"
-            android:textSize="16sp"
-            android:textColor="#c87575"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:backgroundTint="#c87575"/>
-
-        <TextView
-            android:id="@+id/t_pass"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Password"
-            android:textSize="16sp"
-            android:textColor="#c87575"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:backgroundTint="#c87575"/>
-
-        <TextView
-            android:id="@+id/t_gender"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Gender"
-            android:textSize="16sp"
-            android:textColor="#c87575"/>
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <RadioButton
+            <TextView
+                android:id="@+id/bijb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:buttonTint="#c87575"
-                android:text="Laki-Laki"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:text="BIJB"
+                android:textSize="80sp"
+                android:textStyle="bold"
                 android:textColor="#c87575"/>
 
-            <RadioButton
+            <TextView
+                android:id="@+id/signin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:buttonTint="#c87575"
-                android:text="Perempuan"
+                android:layout_gravity="center"
+                android:text="SIGN IN"
+                android:textSize="48sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/t_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Username"
+                android:textSize="16sp"
                 android:textColor="#c87575"/>
 
-        </RadioGroup>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:backgroundTint="#c87575"/>
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/t_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Email"
+                android:textSize="16sp"
+                android:textColor="#c87575"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:backgroundTint="#c87575"/>
+
+            <TextView
+                android:id="@+id/t_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Password"
+                android:textSize="16sp"
+                android:textColor="#c87575"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:backgroundTint="#c87575"/>
+
+            <TextView
+                android:id="@+id/t_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Gender"
+                android:textSize="16sp"
+                android:textColor="#c87575"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#c87575"
+                    android:text="Laki-Laki"
+                    android:textColor="#c87575"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:buttonTint="#c87575"
+                    android:text="Perempuan"
+                    android:textColor="#c87575"/>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_ellips_white"
+                android:text="SIGN UP"
+                android:textColor="#c87575"/>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </RelativeLayout>
